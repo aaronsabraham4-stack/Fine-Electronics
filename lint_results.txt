@@ -1,0 +1,215 @@
+
+D:\projects\fine\src\App.jsx
+   1:8   error  'React' is defined but never used                          no-unused-vars
+  24:9   error  'handleEnquireProduct' is assigned a value but never used  no-unused-vars
+  38:42  error  'productId' is defined but never used                      no-unused-vars
+
+D:\projects\fine\src\components\Layout\AnnouncementBar.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Layout\BackToTop.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Layout\FloatingWhatsApp.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Layout\Footer.jsx
+   1:8   error  'React' is defined but never used        no-unused-vars
+   2:10  error  'Phone' is defined but never used        no-unused-vars
+   2:17  error  'Mail' is defined but never used         no-unused-vars
+   2:23  error  'MapPin' is defined but never used       no-unused-vars
+  25:19  error  'onOpenQuote' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Layout\Navbar.jsx
+  1:8   error  'React' is defined but never used                no-unused-vars
+  7:10  error  'isScrolled' is assigned a value but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\AchievementsStats.jsx
+   1:8   error    'React' is defined but never used                                                                                                                                                                                                                                    no-unused-vars
+  25:39  warning  The ref value 'elementRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'elementRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  33:9   error    'start' is assigned a value but never used                                                                                                                                                                                                                           no-unused-vars
+
+D:\projects\fine\src\components\Sections\Brands.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\CTAHelp.jsx
+  1:8   error  'React' is defined but never used        no-unused-vars
+  5:20  error  'onOpenQuote' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\Categories.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\Contact.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\ContactSection.jsx
+  1:8   error  'React' is defined but never used   no-unused-vars
+  2:10  error  'motion' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\FAQ.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\FeaturedProducts.jsx
+   1:8   error  'React' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      no-unused-vars
+   3:35  error  'Filter' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     no-unused-vars
+   3:51  error  'ShieldCheck' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                no-unused-vars
+  38:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  36 |     }
+  37 |
+> 38 |     setFilteredProducts(result);
+     |     ^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  39 |   }, [activeCategory, searchQuery]);
+  40 |
+  41 |   return (  react-hooks/set-state-in-effect
+
+D:\projects\fine\src\components\Sections\FeaturedProductsGrid.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\Hero.jsx
+  1:8   error  'React' is defined but never used        no-unused-vars
+  6:17  error  'onOpenQuote' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\RecentProjects.jsx
+  1:8   error  'React' is defined but never used   no-unused-vars
+  3:20  error  'MapPin' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\Services.jsx
+  1:8   error  'React' is defined but never used             no-unused-vars
+  6:21  error  'onEnquireService' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\ShopGallery.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\Testimonials.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\TopBrandsCategorized.jsx
+    1:8   error  'React' is defined but never used        no-unused-vars
+  253:33  error  'onOpenQuote' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\Sections\WhyChooseUs.jsx
+   1:8   error    'React' is defined but never used                                                                                                                                                                                                                                    no-unused-vars
+  26:39  warning  The ref value 'elementRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'elementRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+  34:9   error    'start' is assigned a value but never used                                                                                                                                                                                                                           no-unused-vars
+
+D:\projects\fine\src\components\UI\LanguageSelector.jsx
+   1:8  error  'React' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   no-unused-vars
+  33:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  31 |       const lang = googtrans.split('/').pop();
+  32 |       if (LANGUAGES.some(l => l.code === lang)) {
+> 33 |         setActiveLang(lang);
+     |         ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  34 |       }
+  35 |     }
+  36 |   }, []);  react-hooks/set-state-in-effect
+  73:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  71 |   const handleLanguageChange = (langCode) => {
+  72 |     // Set cookies for both paths to ensure Google Translate picks it up correctly
+> 73 |     document.cookie = `googtrans=/en/${langCode}; path=/;`;
+     |     ^^^^^^^^ value cannot be modified
+  74 |     document.cookie = `googtrans=/en/${langCode}; path=/; domain=${window.location.hostname}`;
+  75 |     
+  76 |     // In case local dev uses localhost                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/immutability
+  74:5  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  72 |     // Set cookies for both paths to ensure Google Translate picks it up correctly
+  73 |     document.cookie = `googtrans=/en/${langCode}; path=/;`;
+> 74 |     document.cookie = `googtrans=/en/${langCode}; path=/; domain=${window.location.hostname}`;
+     |     ^^^^^^^^ value cannot be modified
+  75 |     
+  76 |     // In case local dev uses localhost
+  77 |     if (window.location.hostname === 'localhost') {                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/immutability
+  78:7  error  Error: This value cannot be modified
+
+Modifying a variable defined outside a component or hook is not allowed. Consider using an effect.
+
+  76 |     // In case local dev uses localhost
+  77 |     if (window.location.hostname === 'localhost') {
+> 78 |       document.cookie = `googtrans=/en/${langCode}; path=/; domain=localhost`;
+     |       ^^^^^^^^ value cannot be modified
+  79 |     }
+  80 |     
+  81 |     setActiveLang(langCode);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/immutability
+
+D:\projects\fine\src\components\UI\ProductModal.jsx
+  1:8  error  'React' is defined but never used  no-unused-vars
+
+D:\projects\fine\src\components\UI\QuoteModal.jsx
+   1:8  error  'React' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             no-unused-vars
+  23:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  21 |       // Set initial product or service if specified
+  22 |       if (initialProductId) {
+> 23 |         setFormData((prev) => ({
+     |         ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  24 |           ...prev,
+  25 |           interestType: 'product',
+  26 |           interestId: initialProductId,  react-hooks/set-state-in-effect
+
+D:\projects\fine\src\components\UI\SearchModal.jsx
+   1:8  error  'React' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           no-unused-vars
+  16:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  14 |       document.body.style.overflow = 'hidden';
+  15 |     } else {
+> 16 |       setQuery('');
+     |       ^^^^^^^^ Avoid calling setState() directly within an effect
+  17 |       setResults([]);
+  18 |       document.body.style.overflow = '';
+  19 |     }  react-hooks/set-state-in-effect
+  27:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  25 |   useEffect(() => {
+  26 |     if (!query.trim()) {
+> 27 |       setResults([]);
+     |       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |       return;
+  29 |     }
+  30 |                                                              react-hooks/set-state-in-effect
+
+D:\projects\fine\src\components\UI\VoiceTranscriber.jsx
+   1:8   error  'React' is defined but never used                      no-unused-vars
+  17:43  error  'placeholderClass' is assigned a value but never used  no-unused-vars
+
+D:\projects\fine\src\context\ThemeContext.jsx
+   1:8   error  'React' is defined but never used                                                                                               no-unused-vars
+  39:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+✖ 57 problems (55 errors, 2 warnings)
